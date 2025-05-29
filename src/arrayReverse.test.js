@@ -1,7 +1,7 @@
-"use strict";
+'use strict';
 
 describe(`Function 'arrayReverse':`, () => {
-  const arrayReverse = require("./arrayReverse");
+  const arrayReverse = require('./arrayReverse');
 
   it(`should be declared`, () => {
     expect(arrayReverse).toBeInstanceOf(Function);
@@ -12,17 +12,17 @@ describe(`Function 'arrayReverse':`, () => {
   });
 
   it(`should reverse word(s) in the array, (including spaces)`, () => {
-    expect(arrayReverse(["Mate", "Academy"])).toEqual([
-      "ymed",
-      "acAetaM",
+    expect(arrayReverse(['Mate', 'Academy'])).toEqual([
+      'ymed',
+      'acAetaM',
     ]);
 
-    expect(arrayReverse(["Hel lo"])).toEqual(["ol leH"]);
+    expect(arrayReverse(['Hel lo'])).toEqual(['ol leH']);
   });
 
-  it("should correctly reverse array with words of different lengths ", () => {
-    const someWords = ["I", "am", "a", "student!"];
-    const reversedWords = ["!", "tn", "e", "dutsamaI"];
+  it('should correctly reverse array with words of different lengths ', () => {
+    const someWords = ['I', 'am', 'a', 'student!'];
+    const reversedWords = ['!', 'tn', 'e', 'dutsamaI'];
 
     expect(arrayReverse(someWords)).toEqual(reversedWords);
   });
